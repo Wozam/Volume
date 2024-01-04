@@ -27,18 +27,6 @@ public class AudioManager : MonoBehaviour {
         }
     }
 
-    void Update()
-    {
-        if(!playing && source.isPlaying == false) {
-            source.Play();
-            playing = true;
-        } else if(playing == true) {
-            source.Stop();
-            playing = false;
-        }
-
-    }
-
     public void Volume (float volume) {
         AudioListener.volume = volume;
 
